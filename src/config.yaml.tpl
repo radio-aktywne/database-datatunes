@@ -1,3 +1,10 @@
+# Configuration for the credentials
+credentials:
+  # Configuration for main user credentials
+  user:
+    # Password for the main user
+    password: {{ env.Getenv "GRAPHITE__CREDENTIALS__USER__PASSWORD" "password" | strings.Quote }}
+
 # Cofiguration for the server
 server:
   # Host to run the server on
@@ -5,10 +12,3 @@ server:
 
   # Port to run the server on
   port: {{ env.Getenv "GRAPHITE__SERVER__PORT" "10220" | conv.ToInt }}
-
-# Configuration for the credentials
-credentials:
-  # Configuration for main user credentials
-  user:
-    # Password for the main user
-    password: {{ env.Getenv "GRAPHITE__CREDENTIALS__USER__PASSWORD" "password" | strings.Quote }}

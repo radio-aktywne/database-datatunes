@@ -4,9 +4,9 @@ services:
       context: ./
       network: host
     environment:
+      - "GRAPHITE__CREDENTIALS__USER__PASSWORD=${GRAPHITE__CREDENTIALS__USER__PASSWORD:-password}"
       - "GRAPHITE__SERVER__HOST=${GRAPHITE__SERVER__HOST:-0.0.0.0}"
       - "GRAPHITE__SERVER__PORT=${GRAPHITE__SERVER__PORT:-10220}"
-      - "GRAPHITE__CREDENTIALS__USER__PASSWORD=${GRAPHITE__CREDENTIALS__USER__PASSWORD:-password}"
     network_mode: host
     volumes:
       - data:/database/data/

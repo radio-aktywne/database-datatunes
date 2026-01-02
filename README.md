@@ -2,7 +2,7 @@
 
 <div align="center">
 
-Broadcast playlists data 💽
+Broadcast playlists database 💽
 
 [![Lint](https://github.com/radio-aktywne/graphite/actions/workflows/lint.yaml/badge.svg)](https://github.com/radio-aktywne/graphite/actions/workflows/lint.yaml)
 [![Image](https://github.com/radio-aktywne/graphite/actions/workflows/image.yaml/badge.svg)](https://github.com/radio-aktywne/graphite/actions/workflows/image.yaml)
