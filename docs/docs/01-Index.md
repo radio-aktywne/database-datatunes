@@ -5,7 +5,7 @@ title: Index
 
 # graphite
 
-Broadcast playlists data 💽
+Broadcast playlists database 💽
 
 ## 💡 About
 
